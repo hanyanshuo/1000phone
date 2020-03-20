@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1.数组的概念：一组相同类型或者不同类型的数据的集合。
+        //2.数组的创建
+        //2.1内置构造函数创建数组--Array
+        //构造函数：也是函数，首字母大写，new去调用
+        //构造函数(类)：一类事物，人类。
+        //对象：类下面具体的例子，张三  new 构造函数
+        //对象：属性+方法 
+        //对象的属性：对象的外观，张三的身高，体重...
+        //对象的方法：对象具有的功能，张三会开车
+
+        //数据类型：
+        //基本的数据类型：number,string,boolean,undefined,null
+        //复杂类型：object(对象)
+
+        // var arr = new Array();//创建一个空数组
+        // console.log(typeof arr);//object
+        //var arrnum = new Array(1,23,56,78);//创建一个数字数组
+        var arr1 = new Array('hello', 'hi', 123, 250, true);//任意类型的值组成的数组
+
+
+        //2.2字面量创建一个数组-[]
+        //在计算机科学中，字面量是用于表达源代码中一个固定值的表示法。
+        var arr2 = ['hello', 'hi', 123, 250, true];
+
+        //3.构造函数创建和字面量创建数组的区别
+        //构造函数创建：如果数组只有一项值，而这个值是数字，数字代表数组的长度。
+        //字面量没有这种情况
+        var arr3 = new Array(5);//5代表的是数组的长度。
+        console.log(arr3[0]);//undefined
+        console.log(arr3.length);//5
+
+        var arr4 = [5];//这里的5数组的第一项。
+        console.log(arr4[0]);//5
+        console.log(arr4.length);//1
+    </script>
+</body>
+
+</html>
